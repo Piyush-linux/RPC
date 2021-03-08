@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RPC</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<section class="section">
+		<div class="columns is-multiline is-centered">
+			<div class="column is-half">
+				<div class="box">
+					<div class="columns is-multiline">
+						<!-- score -->
+						<div class="column is-full">
+							<div class="block">PC :</div>
+							<div class="block">YOU :</div>
+						</div>
+						<!-- icon -->
+						<div class="column">
+							<div class="level is-mobile">
+								<div class="levle-item">
+									<span class="icon is-medium" onclick="game('rock')">
+										
+										<img src="fist.svg" alt="">
+									</span>
+								</div>
+								<div class="levle-item">
+									<span class="icon is-large" onclick="game('paper')">
+										<img src="paper.svg" alt="">
+									</span>
+								</div>
+								<div class="levle-item"> 
+									<span class="icon is-large" onclick="game('scissor')">
+										<img src="scissor.svg" alt="">
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- choice -->
+						<div class="column" id="choice">
+							<div class="block has-text-centered"></div>
+							<div class="block has-text-centered"></div>
+							<!-- winner -->
+							<div class="block has-text-centered has-background-warning-light has-text-warning-dark py-2" style="display: none;">
+								<div class="icon-text">
+								YOU WIN 
+									<span class="icon">
+										<img src="https://www.flaticon.com/svg/vstatic/svg/4269/4269512.svg?token=exp=1615219847~hmac=0d069c4a305adaf7e5bc9815fd40cfcc" alt="">
+									</span>
+								</div>
+							</div>
+							<div class="block has-text-centered has-background-danger-light has-text-danger-dark py-2" style="display: none;">
+								YOU LOSS
+							</div>
+							<div class="block has-text-centered has-background-grey-light has-text-grey-darker py-2" style="display: none;">
+								It's  DRAW
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- script -->
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
