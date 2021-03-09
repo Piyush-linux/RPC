@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RPC</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+	<style>
+		@font-face {
+			font-family: mit;
+			src: url('./Hermit.otf');
+		}
 
+		body {
+			font-family: "mit";
+			font-weight: bolder;
+			width: 96vw;
+		}
+	</style>
 </head>
+
 <body>
 	<section class="section">
 		<div class="columns is-multiline is-centered">
 			<div class="column is-half">
 				<div class="box">
-					<div class="columns is-multiline">
+					<div class="columns is-multiline is-centered">
 						<!-- score -->
-						<div class="column is-full">
+						<div class="column is-full" id="score">
 							<div class="block">PC :</div>
 							<div class="block">YOU :</div>
 						</div>
 						<!-- icon -->
-						<div class="column">
+						<div class="column is-7">
 							<div class="level is-mobile">
 								<div class="levle-item">
 									<span class="icon is-medium" onclick="game('rock')">
-										
-										<img src="fist.svg" alt="">
+										<img src="fist.svg" alt="sorry for img error">
 									</span>
 								</div>
 								<div class="levle-item">
@@ -33,7 +45,7 @@
 										<img src="paper.svg" alt="">
 									</span>
 								</div>
-								<div class="levle-item"> 
+								<div class="levle-item">
 									<span class="icon is-large" onclick="game('scissor')">
 										<img src="scissor.svg" alt="">
 									</span>
@@ -41,23 +53,19 @@
 							</div>
 						</div>
 						<!-- choice -->
-						<div class="column" id="choice">
+						<div class="column is-7" id="choice">
 							<div class="block has-text-centered"></div>
 							<div class="block has-text-centered"></div>
 							<!-- winner -->
 							<div class="block has-text-centered has-background-warning-light has-text-warning-dark py-2" style="display: none;">
-								<div class="icon-text">
-								YOU WIN 
-									<span class="icon">
-										<img src="https://www.flaticon.com/svg/vstatic/svg/4269/4269512.svg?token=exp=1615219847~hmac=0d069c4a305adaf7e5bc9815fd40cfcc" alt="">
-									</span>
-								</div>
+								YOU WIN :)
+
 							</div>
 							<div class="block has-text-centered has-background-danger-light has-text-danger-dark py-2" style="display: none;">
-								YOU LOSS
+								YOU LOSS :(
 							</div>
 							<div class="block has-text-centered has-background-grey-light has-text-grey-darker py-2" style="display: none;">
-								It's  DRAW
+								It's DRAW !
 							</div>
 
 						</div>
@@ -66,7 +74,52 @@
 			</div>
 		</div>
 	</section>
+	<!-- social Media -->
+	<section class="">
+		<div class="columns is-multiline is-centered">
+			<div class="column is-7">
+				<div class="level">
+					<div class="level-item">
+
+						<p class="nes-balloon from-left nes-pointer">
+							Feel Free To follow me
+							<span class="icon">
+
+								<i class="nes-mario"></i>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="column is-7">
+				<div class="level is-mobile">
+					<!-- facebook -->
+					<div class="level-item">
+							<span class="icon is-large">
+						<i class="nes-icon facebook is-large"></i>
+												</span>
+					</div>
+					<!-- github -->
+					<div class="level-item">
+						<span class="icon is-large">
+
+							<i class="nes-icon github is-large"></i>
+						</span>
+					</div>
+					<!-- instagram -->
+					<div class="level-item">
+							<span class="icon is-large">
+  					<i class="nes-icon instagram is-large"></i>
+					</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- script -->
 	<script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
